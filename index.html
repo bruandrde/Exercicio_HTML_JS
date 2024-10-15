@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nos conte mais sobre você</h1>
+    </header>
+    <div class="container">
+        <section>
+            <form id="formulario">
+                <p> <b>Quantas horas você estudou essa semana?</b></p>
+                <input type="number" id="time-this-week" />
+                <p> <b>Quantas horas você pretende estudar na próxima semana?</b></p>
+                <input type="number" id="time-next-week" />
+                <p class="error-message">
+                    O número de horas estudadas esta semana deve ser menor que </br> o número de horas que você pretende estudar na próxima semana.
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
